@@ -27,7 +27,7 @@ class SignInPage extends StatelessWidget {
                 ),
               ),
 
-              const SizedBox(height: 40),
+              const SizedBox(height: 30),
 
               // Welcome Back Text
               Center(
