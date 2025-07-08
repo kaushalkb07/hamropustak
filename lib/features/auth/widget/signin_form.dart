@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../viewmodel/signin_viewmodel.dart';
+import '../view/signup_page.dart';
+
 
 class SignInForm extends StatefulWidget {
   const SignInForm({super.key});
@@ -108,7 +110,12 @@ class _SignInFormState extends State<SignInForm> {
                   style: Theme.of(context).textTheme.bodyMedium,
                 ),
                 GestureDetector(
-                  onTap: () {}, // Future signup logic
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (_) => const SignUpPage()),
+                    );
+                  },
                   child: Text(
                     "Sign Up",
                     style: Theme.of(context).textTheme.labelLarge,
